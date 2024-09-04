@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Gallery</title>
+
+    <style>
+
+         body {
+            background: black;
+            color:white;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            margin-top: 0px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        div {
+            margin: 15px auto;
+            width: 85%;
+            border-radius: 50px;
+            padding: 15px 0;
+            transition: all 1ms ease-in-out;
+            max-width: 500px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        div:hover {
+            box-shadow: 2px 2px 13px white;
+        }
+
+        button {
+            display: block;
+            margin: 25px auto 15px auto;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 15px;
+            border: 1px solid rgba(255, 0, 0, 0.759);
+            background: rgb(189, 86, 86);
+        }
+
+        button:hover {
+            cursor: pointer;
+            background: rgb(152, 52, 52);
+        }
+
+
+        .flower-name {
+            display: block;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .description {
+            width: 90%;
+            margin: 15px auto;
+        }
+
+        .sunflower-container {
+            background: linear-gradient(to right, orange, rgb(198, 198, 43));
+            margin-top: 35px;
+        }
+
+        .rose-container {
+            background: linear-gradient(to right, red, rgb(154, 58, 74));
+        }
+
+        .lily-container {
+            background: linear-gradient(to right, green, rgb(182, 182, 22));
+        }
+
+        .lavendar-container {
+            background: linear-gradient(to right, purple, rgb(154, 112, 154));
+        }
+
+        .more-info {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+        }
+
+        .more-info:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 20px;
+            line-height: 20px;
+        }
+
+        .author {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>
+        <em>Flower Gallery</em>
+    </h1>
+    <h2>
+        <strong>Imbali Zami</strong> - My Flowers
+    </h2>
+    <hr>
+    <hr>
+    <div class="sunflower-container">
+        <span class="flower-name">Sunflower</span>
+        <img alt="Sunflowers" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/136/808/original/3aa7e6ab-3dea-4440-8825-78ce8556fc6a-45fbc11.jpg?1722587316">
+        <p class="description">
+            It is often seen as a symbol of faith and devotion, radiating positivity and hope.
+            In some Eastern religions, such as Buddhism, sunflowers are considered sacred and
+            represent spiritual enlightenment. Their ability to turn towards the sun is seen as 
+            a metaphor for the human quest for enlightenment and self-realization.
+        </p>
+        <a class="more-info" href="https://en.wikipedia.org/wiki/Common_sunflower" target="_blank">More on Sunflowers</a>
+    </div>
+
+    <div class="rose-container">
+        <span class="flower-name">Rose</span>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/136/833/original/Bella_Rosa_%28Kordes_1981%29.jpg?1722600482" alt="roses">
+        <p class="description">
+            Roses symbolize love, royalty, beauty, sensuality, secrecy, and mysticism.
+            They are also associated with achievement and perfection. Roses are prized
+            around the world, among the most beloved and popular flowers. Their 
+            fragrance is instantly recognized, but complex and distinct between varieties.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Rose" target="_blank" class="more-info">
+            More on roses
+        </a>
+    </div>
+
+    <div class="lily-container">
+        <span class="flower-name">Lily</span>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/136/834/original/lily.jpg?1722600638" alt="lilies">
+        <p class="description">
+            Lilies have various symbolic meanings. They are often associated with purity, renewal, 
+            and transience. In Christianity, the Madonna Lily represents the Virgin Mary's purity.
+            The lily is the national flower of Italy and is featured on the country's emblem.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Lilium" target="_blank" class="more-info">
+        More on lilies
+        </a>
+    </div>
+
+    <div class="lavendar-container">
+        <span class="flower-name">Lavendar</span>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/136/835/original/all-about-lavender-722x406.jpg?1722601814" alt="lilies">
+        <p class="description">
+            Lavender flowers represent purity, silence, devotion, serenity, grace, and calmness.
+            Purple is the color of royalty and speaks of elegance, refinement, and luxury, too.
+            The color is also associated with the crown chakra, which is the energy center
+            associated with higher purpose and spiritual connectivity.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/Lavandula" target="_blank" class="more-info">
+            More on lavendars
+        </a>
+    </div>
+
+    <button>
+        Promo Deal Updates 🌺
+    </button>
+
+    <p class="footer">Coded By 
+        <br>
+    <span class="author">
+        Mikhongelo Hlungwana
+    </span>
+    </p>
+    <script>
+
+        function userInfo() {
+            let email = prompt("WHat is your email address ?");
+            let country = prompt("Which country do you reside in ?");
+
+            country = country.toLowerCase();
+
+            if (country === "south africa"){
+                alert("Hey there :) A promo code will be sent to your email address which qualifies you for a 10% discount at popular flower shops which will be listed in the email");
+            } 
+            else {
+                alert("Hello There:) You'll be kept up to date on specials and promos on the most of beautiful of flowers.")
+            }
+        }
+
+        let updateButton = document.querySelector("button");
+        updateButton.addEventListener("click", userInfo);
+
+    </script>
+</body>
+</html>
